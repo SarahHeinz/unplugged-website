@@ -89,19 +89,19 @@ textarea {
 
 /*---------Base Header-Footer Styles ----*/
 
-header, 
+header,
 footer {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 
 /*---------Header Styles ----*/
 
 header {
-
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -109,6 +109,17 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+img {
+  width: 60%;
+
 }
 
 header nav {
@@ -116,41 +127,48 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
+
+header nav ul li {}
+
 
 /* Footer*/
 
 footer {
-
+  flex-direction: column;
+}
+footer p {
+margin: 0;
 }
 
 footer .content-wrapper {
-
+  width: 55%;
+  margin: 50px 0;
 }
 
-footer .footer-content {
-
-
-}
+footer .footer-content {}
 
 footer .contact {
-
-
+  margin-bottom: 50px;
 }
 
-footer .social {
-
+footer .social h4 {
+  margin: 20px 0;
 }
+
+footer .social {}
 
 footer .social-icons {
   display: flex;
-justify-content: space-around;
-align-items: center;
+  justify-content: space-around;
+  align-items: center;
 
 }
 
@@ -161,8 +179,13 @@ footer .social-icons p {
 }
 
 footer .copyright {
-
+  margin: 20px 0;
 }
+
+footer .copyright p {
+  margin: 0;
+}
+
 
 /*---------Mobile Styles Homepage----*/
 
@@ -172,6 +195,8 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+.hero-area .content-wrapper {}
+
 
 
 /* -------- Aside --------*/
@@ -180,45 +205,53 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0;
 }
 
 aside .content-wrapper {
- 
+  width: 100%;
 }
 
-aside .form-description {
+aside .form-description {}
 
+aside .form {
+  padding: 1em;
 }
 
 aside h3 {
+  margin: 20px 0;
 
 }
 
 aside p {
+  margin: 0 0 30px 0;
 
 }
 
-input {
-
-}
+input {}
 
 aside .form {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 /* -------- Features --------*/
 
 .features {
-display: flex;
-justify-content: center;
-flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features .content-wrapper {
+  width: 100%;
+  margin: 50px 0;
 }
 
 .features h2 {
-
+  margin-bottom: 60px;
 }
 
 .features .features-items {
@@ -228,25 +261,25 @@ flex-flow: row wrap;
   flex-flow: row wrap;
 }
 
-article {
+.features article {
+  width: 60%;
+  margin: 30px 0;
 
 }
 
-article h3 {
-
+.features p {
+  margin: 0;
 }
 
-article p {
+article h3 {}
 
-}
+article p {}
 
 .fontawesome-icon {
-
+  margin: 0 0 0 40px;
 }
 
-.features-item-description {
-
-}
+.features-item-description {}
 
 /* -------- Reviews --------*/
 
@@ -257,6 +290,20 @@ article p {
   flex-flow: row wrap;
 }
 
+.reviews .content-wrapper {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+
+.reviews h3 {
+  width: 95%;
+  margin: 20px 0;
+}
 
 
 
@@ -267,7 +314,7 @@ article p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
- }
+}
 
 .contact-section {
   display: flex;
@@ -276,20 +323,30 @@ article p {
   flex-flow: row wrap;
 
 }
+.contact-content p {
+  margin: 0;
+}
 
 /* -------- FAQ --------*/
 .faq {
   display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .faq .content-wrapper {
   display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0 0 0 50px;
+}
+.faq-content {
+  margin-bottom: 50px;
+}
+.faq h2 {
+  margin: 40px;
 }
 
 /* ==========================================================================
@@ -385,9 +442,9 @@ flex-flow: row wrap;
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -398,6 +455,7 @@ flex-flow: row wrap;
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -465,4 +523,3 @@ flex-flow: row wrap;
     page-break-after: avoid;
   }
 }
-
